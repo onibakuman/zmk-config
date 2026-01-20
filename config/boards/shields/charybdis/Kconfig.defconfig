@@ -1,0 +1,32 @@
+if SHIELD_CHARYBDIS_RIGHT
+
+config PMW3610
+    bool "PMW3610 compatibility"
+    default y
+    select PMW3610_ALT
+
+config PMW3610_REST1_SAMPLE_TIME_MS
+    int "PMW3610 REST1 sample time (ms)"
+    default 100
+
+config PMW3610_REST2_SAMPLE_TIME_MS
+    int "PMW3610 REST2 sample time (ms)"
+    default 200
+
+config PMW3610_REST3_SAMPLE_TIME_MS
+    int "PMW3610 REST3 sample time (ms)"
+    default 300
+
+config PMW3610_RUN_DOWNSHIFT_TIME_MS
+    int "PMW3610 run downshift time (ms)"
+    default 500
+
+config PMW3610_REST1_DOWNSHIFT_TIME_MS
+    int "PMW3610 REST1 downshift time (ms)"
+    default 3000
+
+config PMW3610_REST2_DOWNSHIFT_TIME_MS
+    int "PMW3610 REST2 downshift time (ms)"
+    default 30000
+
+endif

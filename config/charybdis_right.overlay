@@ -1,5 +1,0 @@
-&spi0 {
-    trackball@0 {
-        compatible = "pixart,pmw3610-alt";
-    };
-};
