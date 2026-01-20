@@ -1,0 +1,52 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            label = "BASE";
+            bindings = <
+                &kp GRAVE  &kp N1     &kp N2     &kp N3     &kp N4     &kp N5     &kp N6     &kp N7     &kp N8     &kp N9     &kp N0     &kp BSPC
+                &kp TAB    &kp Q      &kp W      &kp E      &kp R      &kp T      &kp Y      &kp U      &kp I      &kp O      &kp P      &kp MINUS
+                &kp ESC    &kp A      &kp S      &kp D      &kp F      &kp G      &kp H      &kp J      &kp K      &kp L      &kp SEMI   &kp SQT
+                &kp LSHFT  &kp Z      &kp X      &kp C      &kp V      &kp B      &kp N      &kp M      &kp COMMA  &kp DOT    &kp SLASH  &kp RSHFT
+                &kp LCTRL  &kp LALT   &kp LGUI   &mo 3      &kp TAB    &lt 1 SPACE    &lt 2 ENTER    &kp DEL
+            >;
+        };
+
+        nav_layer {
+            label = "NAV";
+            bindings = <
+                &kp F1     &kp F2     &kp F3     &kp F4     &kp F5     &kp F6     &kp F7     &kp F8     &kp F9     &kp F10    &kp F11    &kp F12
+                &trans     &trans     &trans     &trans     &trans     &trans     &kp HOME   &kp PG_UP  &kp UP     &kp PG_DN  &kp END    &kp INS
+                &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP &kp C_PREV &kp C_NEXT &kp C_PLAY &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT  &kp HOME   &kp END
+                &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans
+                &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans
+            >;
+        };
+
+        num_layer {
+            label = "NUM";
+            bindings = <
+                &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT  &kp CARET  &kp N7     &kp N8     &kp N9     &kp MINUS  &kp EQUAL  &kp BSPC
+                &kp AMPS   &kp STAR   &kp LPAR   &kp RPAR   &kp LBKT   &kp RBKT   &kp N4     &kp N5     &kp N6     &kp PLUS   &kp BSLH   &kp GRAVE
+                &kp UNDER  &kp PLUS   &kp COLON  &kp SEMI   &kp COMMA  &kp DOT    &kp N1     &kp N2     &kp N3     &kp SQT    &kp DQT    &kp SLASH
+                &kp GRAVE  &kp GRAVE  &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT   &kp N0     &kp DOT    &kp ENTER  &trans     &trans     &trans
+                &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans
+            >;
+        };
+
+        sym_layer {
+            label = "SYM";
+            bindings = <
+                &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT  &kp CARET  &kp AMPS   &kp STAR   &kp LPAR   &kp RPAR   &kp UNDER  &kp PLUS
+                &kp LBKT   &kp RBKT   &kp BSLH   &kp GRAVE  &kp MINUS  &kp EQUAL  &kp SEMI   &kp COLON  &kp SQT    &kp DQT    &kp COMMA  &kp DOT
+                &kp SLASH  &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans
+                &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans
+                &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans
+            >;
+        };
+    };
+};

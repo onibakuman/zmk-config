@@ -1,0 +1,14 @@
+# West workspace artifacts
+/.west/
+/build/
+/zephyr/
+/zmk/
+/modules/
+
+# Local module clones (legacy path)
+/zmk-pmw3610-driver/
+
+# Firmware outputs
+*.uf2
+*.hex
+*.bin

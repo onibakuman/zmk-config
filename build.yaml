@@ -18,3 +18,5 @@
 #     artifact-name: corne_left_with_studio
 #
 ---
+board: [ "nice_nano" ]
+shield: [ "charybdis_left", "charybdis_right" ]
